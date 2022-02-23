@@ -1,20 +1,51 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap');
-
-html {
-    box-sizing: border-box;
-    font-size: 100%;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-* , *:before, *:after {
-    box-sizing: inherit;
+body{
+    width: 100%;
+    height: 100vh;
+    background: black;
 }
 
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vh;
+    gap: 100px;
+}
 
-body {
-    background-color: rgb(199, 132, 143);
-    background-image: linear-gradient(rgb(204, 84, 104) 2%, rgb(247, 216, 221) 108%);
-    color: #fff;
-    min-height: 100vh;
-    text-align: center;
-    font-family: 'Josefin Sans', sans-serif;
+#linkedin, #github, #twitter, #instagram, #website {
+    font-size: 100px;
+    color: white;
+    animation: animate 4s linear infinite;
+    text-shadow: 0 0 50px #0072ff, 0 0 100px #0072ff, 0 0 150px #0072ff, 0 0 200px #0072ff;
+}
+
+#linkedin {
+    animation-delay: 0.3s;
+}
+#github {
+    animation-delay: 0.7s;
+}
+#twitter {
+    animation-delay: 0.10s;
+}
+#instagram {
+    animation-delay: 0.7s;
+}
+#webite {
+    animation-delay: 0.3s;
+}
+
+@keyframes animate {
+    from {
+        filter: hue-rotate(0deg);
+    }
+    to {
+        filter: hue-rotate(300deg);
+    }
 }
