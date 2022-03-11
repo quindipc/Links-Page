@@ -1,29 +1,45 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/ca59b038da.js" crossorigin="anonymous"></script>
+<!DOCTYPE HTML>
 
-<link rel="stylesheet" href="style.css">
-    <title>Chelsea's Links</title>
-</head>
-<body>
+<html>
+	<head>
+		<title>Chelsea's Links</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<div id="wrapper">
+			<div id="bg"></div>
+			<div id="overlay"></div>
+			<div id="main">
 
-    <header> 
-        <h1>Chelsea Quindipan</h1>
-        <img src="#" alt="logo">
-        <h3>Feel free to connect with me!</h3>
-    </header>
+				<!-- Header -->
+					<header id="header">
+						<h1>Chelsea Quindipan</h1>
+						<p>Full Stack Web Developer &nbsp;&bull;&nbsp; Graphic Designer</p>
+						<nav>
+							<ul>
+								<li><a href="https://www.linkedin.com/in/chelsea-quindipan/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+								<li><a href="https://twitter.com/quindipc" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="https://www.instagram.com/chelseaquindipan/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="https://github.com/quindipc" class="icon brands fa-github"><span class="label">Github</span></a></li>
+								<li><a href="mailto:quindipc@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+							</ul>
+						</nav>
+					</header>
 
-    <div class="wrapper">
-        <a href="https://www.linkedin.com/in/chelsea-quindipan/"><i class="fa-brands fa-linkedin" id="linkedin"></i></a>
-        <a href="https://github.com/quindipc"><i class="fa-brands fa-github" id="github"></i></a>
-        <a href="https://twitter.com/quindipc"><i class="fa-brands fa-twitter" id="twitter"></i></a>
-     <a href="https://www.instagram.com/chelseaquindipan/"><i class="fa-brands fa-instagram" id="instagram"></i></a>
-        <a href="https://chelseaquindipan.ca/"><i class="fa-solid fa-globe" id="website"></i></a>
-    </div>
-    
-</body>
+				<!-- Footer -->
+					<footer id="footer">
+						<span class="copyright">&copy; Chelsea Quindipan</span>
+					</footer>
+
+			</div>
+		</div>
+		<script>
+			window.onload = function() { document.body.classList.remove('is-preload'); }
+			window.ontouchmove = function() { return false; }
+			window.onorientationchange = function() { document.body.scrollTop = 0; }
+		</script>
+	</body>
 </html>
